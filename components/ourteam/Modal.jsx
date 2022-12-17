@@ -1,5 +1,5 @@
 import React from 'react'
-import altImg from '../../public/altimage.png';
+// import altImg from '../../public/altimage.png';
 const Modal = ({ onClose, isVisible }) => {
   if (!isVisible) return null;
   const handleClose = (e) => {

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
-import Modal from '../components/ourteam/Modal'
-import { Card } from '../components/ourteam/Card'
+import Modal from './ourteam/Modal'
+import { Card } from './ourteam/Card'
 import { useState } from 'react'
 const Ourteam = () => {
   let ulStyle = {
@@ -21,7 +21,7 @@ const Ourteam = () => {
     }
   }
   return (
-    <Fragment>
+    <Fragment className="bg-black">
       <div className="container w-[100%] bg-black overflow-x-hidden" id='scroll-ourteam'>
         <h1 className=' text-white text-2xl font-semibold relative w-[100%] py-[5vw] flex justify-center items-center'>OUR TEAM</h1>
 

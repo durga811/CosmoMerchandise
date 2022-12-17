@@ -24,7 +24,9 @@ const Ourteam = () => {
   return (
     <Fragment className="bg-black w-[100%]">
       <div className="container w-[100%] bg-black overflow-x-hidden" id='scroll-ourteam'>
-        <h1 className=' text-white text-2xl font-semibold relative w-[100%] py-[5vw] flex justify-center items-center'>OUR TEAM</h1>
+        <div className='relative w-[100%] py-[5vw] flex justify-center items-center'>
+          <h1 className='text-black text-2xl font-bold bg-white h-fit w-fit px-[2vw] py-[1vw] rounded-lg'>OUR TEAM</h1>
+        </div>
 
         <div className="container w-[100%] flex flex-wrap justify-center items-center gap-y-7 gap-x-10" id='ourteam-body'>
           <Card setShowModal={setShowModal} />

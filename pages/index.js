@@ -8,7 +8,7 @@ export default function Home() {
     //   Hello world!
     // </h1>
     <>
-    <Ourteam/>
+     {/* <Ourteam/> */}
     <Gallery/>
     </>
   )

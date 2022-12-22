@@ -22,34 +22,33 @@
     align-items: center;
 
 }
-.image{
+.Himage{
     width: 80vh;
     height: 50vh;
     border-radius: 10px;
     margin-top: 60px;
-    position: relative;
 }
-#img1{
+#Himg1{
     transform: translateX(40%) scale(0.8);
     
 }
-#img2{
+#Himg2{
     z-index: 100;
-    box-shadow: 5px 5px 18px #888888;
+    
 }
-#img3{
+#Himg3{
     transform: translateX(-40%) scale(0.8);
 }
 .circle{
     display: flex;
-    position: relative;
-    margin: 1vh 0 0 40rem;
+    position: absolute;
+    margin: 0 0 0 40rem;
 }
 .circle span{
     font-size: 5rem;
     color: antiquewhite;
 }
-span:nth-child(2){
+span:nth-child(1){
     color: aqua;
 }
 @media screen and (max-width:767px) {

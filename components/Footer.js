@@ -32,9 +32,9 @@ function Footer(){
             </div>
         </div>
         <div className='bottom-image'>
-        <img id="btm-img1" src="https://i.ibb.co/yqqNYjZ/1.png" border="0"/>
-        <img id="btm-img2" src="https://i.ibb.co/QrG32CP/2.png"  border="0"/>
-        <img id="btm-img3" src="https://i.ibb.co/jJh6wd1/3.png"  border="0"/>
+        <img id="btm-img1" src="https://i.ibb.co/k12yTpb/svg-1.png" border="0" />
+        <img id="btm-img2" src="https://i.ibb.co/p4rC7BF/svg-2-1.png"  border="0" />
+        <img id="btm-img3"  src="https://i.ibb.co/GWZ4SCy/svg-1-1.png" border="0" />
         </div>
     </div>
     );

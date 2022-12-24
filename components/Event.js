@@ -1,8 +1,5 @@
 import React from "react";
 import EventPages from "./EventPages";
-// import image1 from "../assets/images/dance.png";
-// import image2 from "../assets/images/music.png";
-// import image3 from "../assets/images/drama.png";
 
 
 function Event() {
@@ -50,6 +47,3 @@ const transition={
 
 export default Event;
 
-//#A34744
-//before:content-[''] before:bg-[#A34744] before:h-full before:w-full before:bg-opacity-60 before:absolute hover:before:-z-10
-//before:content-[''] before:bg-[#EDAD38] before:h-full before:w-full before:bg-opacity-60 before:absolute hover:before:-z-10

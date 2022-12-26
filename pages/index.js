@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Homesection from './homeSection'
+import Aboutus from '../components/Aboutus'
 
 export default function Home() {
   return (
     
-        <Homesection />
+        <Aboutus/>
   )
 }

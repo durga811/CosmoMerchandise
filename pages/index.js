@@ -5,6 +5,6 @@ import picture from '../assets/images/img1.jpeg'
 
 export default function Home() {
   return (
-    <merch/>
+    <Aboutus/>
   )
 }

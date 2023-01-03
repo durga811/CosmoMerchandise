@@ -1,10 +1,6 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import React from "react";
+import EventCom from "../components/EventCom";
 
 export default function Home() {
-  return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+  return <EventCom />;
 }

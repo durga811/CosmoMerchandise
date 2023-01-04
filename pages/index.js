@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <>
       <div
-        className=" bg-[#391F26] h-[full] w-[100%]"
+        className=" bg-[#391F26] bg-cover"
         style={{ backgroundImage: `url(${bgImage.src})` }}
       >
         <div>

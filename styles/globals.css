@@ -2,3 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    color: white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');

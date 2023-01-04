@@ -13,7 +13,7 @@ const merch = () => {
 
                         <div class="grid grid-start-1 col-end-2 ">
                             <div className='image mx-auto '  >
-                                <img src="https://i.ibb.co/TkpX3Gg/hoodie-6014291-4980179-1.png" alt='picture' className='rounded-md'
+                                <img src="https://i.ibb.co/TkpX3Gg/hoodie-6014291-4980179-1.png" alt='picture'
                                     className="object-cover w-full aspect-square rounded-xl"
                                 />
                             </div>

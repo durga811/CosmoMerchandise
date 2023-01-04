@@ -383,7 +383,6 @@
     "@babel/runtime" "^7.10.2"
     "@babel/runtime-corejs3" "^7.10.2"
 
-
   optionalDependencies:
     fsevents "~2.3.2"
 

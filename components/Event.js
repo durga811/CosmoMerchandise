@@ -10,18 +10,18 @@ function Event() {
     dance: "https://i.ibb.co/jz1z2v6/dance.png",
     logo: "https://i.ibb.co/YRmWqPB/cosmo-logo-1.png"
   };
-const transition={
-    transition:"all 1s ease-in-out",
-}
+  const transition = {
+    transition: "all 1s ease-in-out",
+  }
   return (
     <>
       <div className="Event relative w-screen h-screen overflow-hidden flex justify-center">
         <div className="opacity-0 animate-[logo_4s_1_1s_linear_forwards] w-[260px] h-[57px] absolute left-[72px] top-[50px] z-[15]">
           <div className="logo-wrapper bg-white p-1 flex item-center text-[1.53em] font-bold tracking-widest h-[50px] gap-1 ">
             <div className="bg-[#153c37]">
-            <img src={image.logo} alt="" className="w-full h-full"/>
+              <img src={image.logo} alt="" className="w-full h-full" />
             </div>
-            <h1>COSMOPOLITAN</h1>
+            <h1 className="text-black">COSMOPOLITAN</h1>
           </div>
           <h3 className="tracking-[0.3rem] text-[13px] font-[600] text-white mt-[0.1rem] text-center">THE MULTI ETHNIC FEST</h3>
         </div>
@@ -29,15 +29,15 @@ const transition={
           <h1 className="pointer-events-none">EVENTS</h1>
         </div>
         <div className="main absolute w-screen flex justify-center items-center h-screen flex-1">
-          
+
           <div className="peer absolute group" style={transition}>
-          <EventPages color='#153c37' img={image.dance} content="Dance"/>
+            <EventPages color='#153c37' img={image.dance} content="Dance" />
           </div>
           <div className="left-[33.33%] hover:left-[32.33%] peer-hover:left-[35.33%] peer absolute" style={transition}>
-          <EventPages color='#A34744' img={image.music} content="Music"/>
+            <EventPages color='#A34744' img={image.music} content="Music" />
           </div>
           <div className="left-[66.66%] absolute hover:left-[64.66%] peer-hover:left-[67.66%]" style={transition}>
-          <EventPages color="#EDAD38" img={image.drama} content="Drama"/>
+            <EventPages color="#EDAD38" img={image.drama} content="Drama" />
           </div>
         </div>
       </div>

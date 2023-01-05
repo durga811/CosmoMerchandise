@@ -6,21 +6,24 @@ module.exports = {
   ],
   theme: {
     extend: {
-      keyframes:{
-        textAnimation:{
-          "0%":{top:"430px"},
-          "50%":{top:"155px", fontSize:"380px", lineHeight:"341px"},
-          "100%":{top:"74px", fontSize:"96px", lineHeight:"117px"}
+      keyframes: {
+        textAnimation: {
+          "0%": { top: "430px" },
+          "50%": { top: "155px", fontSize: "380px", lineHeight: "341px" },
+          "100%": { top: "74px", fontSize: "96px", lineHeight: "117px" }
         },
-        logo:{
-          "0%":{
-            opacity:"0"
+        logo: {
+          "0%": {
+            opacity: "0"
           },
-          "50%":{opacity:"0.5"},
-          "100%":{
-            opacity:"1"
+          "50%": { opacity: "0.5" },
+          "100%": {
+            opacity: "1"
           }
         }
+      },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
       }
     },
   },

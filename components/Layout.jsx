@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
 
 
     return (
-        <>
+        <div className=''>
             <Head>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
                 }
 
             </div>
-        </>
+        </div>
     )
 }
 

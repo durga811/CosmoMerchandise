@@ -1,7 +1,6 @@
 // library
 import React from "react";
 
-// Widgets
 import Button from "../components/Button";
 
 // Components

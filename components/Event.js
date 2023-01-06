@@ -17,7 +17,7 @@ const transition={
     <div>
       <div className="Event relative w-full h-screen overflow-hidden flex justify-center">
         <div className="opacity-0 animate-[logo_4s_1_1s_linear_forwards] w-[260px] h-[57px] absolute left-[72px] top-[50px] z-[15]">
-          <div className="logo-wrapper bg-white p-1 flex item-center text-[1.53em] font-bold tracking-widest h-[50px] gap-1 text-black my-auto">
+          <div className="logo-wrapper bg-white p-1 flex item-center text-[1.53em] font-bold tracking-widest h-[50px] gap-1 ">
             <div className="bg-[#153c37]">
             <img src={image.logo} alt="" className="w-full h-full"/>
             </div>

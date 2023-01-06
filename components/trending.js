@@ -3,14 +3,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination, EffectCoverflow } from "swiper";
 
 // Import Swiper styles
-import "swiper/swiper.scss";
-import "swiper/components/navigation/navigation.scss";
-import "swiper/components/pagination/pagination.scss";
-import "swiper/components/effect-coverflow/effect-coverflow.scss";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/effect-coverflow";
 
 SwiperCore.use([Navigation, Pagination, EffectCoverflow]);
 
-export default function Trending() {
+export default function SwiperCoverflow() {
   return (
     <div className="App">
       <Swiper
@@ -22,9 +22,11 @@ export default function Trending() {
           stretch: 0,
           depth: 100,
           modifier: 1,
-          slideShadows: false
+          slideShadows: false,
+          
         }}
         slidesPerView={2}
+        loop
         centeredSlides 
         style={{ height: "500px" }}
       >

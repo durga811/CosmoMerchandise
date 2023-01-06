@@ -21,8 +21,11 @@ module.exports = {
             opacity:"1"
           }
         }
+      },
+      fontFamily : {
+        'poppins': ['Poppins', 'sans-serif'],
       }
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar-hide')],
 }

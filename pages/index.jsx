@@ -9,8 +9,8 @@ import Button from "../components/Button";
 // Components
 import UpperSection from "../components/UpperSection";
 import Carousel from "../components/Carousel";
-import Highlights from "../components/homePage/Highlights";
-import Trending from "../components/homePage/Trending";
+import Highlights from "../components/homepage/Highlights";
+import Trending from "../components/homepage/Trending";
 import Events from "../components/Event";
 
 export default function Home() {

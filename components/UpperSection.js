@@ -29,7 +29,10 @@ function UpperSection() {
         </div>
 
         <div className="ml-[30%]">
-          <img src="https://res.cloudinary.com/dqjqy453u/image/upload/v1672938285/Rectangle_mx5b88.png" alt="handArt" />
+          <img
+            src="https://res.cloudinary.com/dqjqy453u/image/upload/v1672938285/Rectangle_mx5b88.png"
+            alt="handArt"
+          />
         </div>
       </div>
     </>

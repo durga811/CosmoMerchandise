@@ -10,7 +10,7 @@ module.exports = {
         textAnimation:{
           "0%":{top:"430px"},
           "50%":{top:"155px", fontSize:"380px", lineHeight:"341px"},
-          "100%":{top:"74px", fontSize:"96px", lineHeight:"117px"}
+          "100%":{top:"10px", fontSize:"96px", lineHeight:"117px"}
         },
         logo:{
           "0%":{

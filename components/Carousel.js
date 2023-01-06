@@ -266,7 +266,7 @@ const Carousel = () => {
     }
   };
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex justify-center items-center h-screen w-full">
       <section id="slider" className="relative w-[50%] h-[30vw]" style={style}>
         {array.map((value, index) => {
           return (

@@ -23,9 +23,6 @@ export default function Home() {
         }}
         alt="picture"
       >
-        <div>
-          <Header />
-        </div>
         <div className="body">
           <UpperSection />
           <div className="flex justify-center items-center text-black">

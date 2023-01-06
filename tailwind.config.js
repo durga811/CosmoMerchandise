@@ -21,6 +21,9 @@ module.exports = {
             opacity:"1"
           }
         }
+      },
+      fontFamily : {
+        'poppins': ['Poppins', 'sans-serif'],
       }
     },
   },

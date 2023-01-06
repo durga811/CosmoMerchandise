@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
+import Link from "next/link";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -35,8 +36,8 @@ const Navbar = () => {
         "
       >
         <div>
-          <a href="#">
-            <div className="opacity-0 animate-[logo_4s_1_1s_linear_forwards] z-[15]">
+          <Link href="#">
+            <div className="opacity-0 animate-[logo_4s_1_1s_linear_forwards] z-[15] my-auto">
               <div className="logo-wrapper bg-white p-1 flex item-center text-[1.53em] font-bold tracking-widest h-[50px] gap-1 ">
                 <div className="bg-[#153c37]">
                   <img src="https://i.ibb.co/YRmWqPB/cosmo-logo-1.png" alt="" className="w-full h-full" />
@@ -45,13 +46,13 @@ const Navbar = () => {
               </div>
               <h3 className="tracking-[0.3rem] text-[13px] font-[600] text-white mt-[0.1rem] text-center">THE MULTI ETHNIC FEST</h3>
             </div>
-          </a>
+          </Link>
         </div>
         <button onClick={toggelMenu}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             id="menu-button"
-            className="h-6 w-6 cursor-pointer md:hidden block"
+            className="h-6 w-6 cursor-pointer md:hidden block text-white"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -72,28 +73,32 @@ const Navbar = () => {
               text-2xl text-white
               md:flex
               md:justify-between 
+              space-x-10
               md:pt-0"
+            
           >
             <li>
-              <a className="md:p-4 py-2 block " href="#"
+              <Link className="md:p-4 py-2 block " href="#"
               >Gallery
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="md:p-4 py-2 block " href="#"
-              >Events</a>
+              <Link className="md:p-4 py-2 block " href="/events"
+              >Events</Link>
             </li>
             <li>
-              <a className="md:p-4 py-2 block " href="#"
-              >Teams</a>
+              <Link className="md:p-4 py-2 block " href="/"
+              >Teams</Link>
             </li>
             <li>
-              <a className="md:p-4 py-2 block " href="#"
-              >Merch</a>
+              <Link className="md:p-4 py-2 block " href="/merch"
+              >Merch
+              </Link>
             </li>
             <li>
-              <a className="md:p-4 py-2 block " href="#"
-              >About us</a>
+              <Link className="md:p-4 py-2 block " href="#"
+              >About us
+              </Link>
             </li>
           </ul>
         </div>

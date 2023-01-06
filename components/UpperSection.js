@@ -4,7 +4,7 @@ import Image from "next/dist/client/image";
 function UpperSection() {
   return (
     <>
-      <div className="w-full h-[625px] inline-flex mt-[35px]">
+      <div className="w-full h-screen inline-flex mt-[35px]">
         <div>
           <div className=" text-white ml-[200px] mt-[120px] w-[400px]">
             <div className="text-[30px] font-[500]">FILM & MUSIC SOCIETY</div>

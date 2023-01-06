@@ -98,27 +98,25 @@ const EventCom = () => {
         if (para == "dance") setClickState(objMain.danceClick);
     };
     return (
-        <div>
-            <EventSecn>
-                <Logo src={objMain.info.logo} alt="cosmo logo" />
-                <Heading property={clickState.heading} />
-                <MainSec
-                    property={clickState.dance}
-                    info={objMain.info.dance}
-                    clickFun={clickFun}
-                />
-                <MainSec
-                    property={clickState.music}
-                    info={objMain.info.music}
-                    clickFun={clickFun}
-                />
-                <MainSec
-                    property={clickState.drama}
-                    info={objMain.info.drama}
-                    clickFun={clickFun}
-                />
-            </EventSecn>
-        </div>
+        <EventSecn>
+            <Logo src={objMain.info.logo} alt="cosmo logo" />
+            <Heading property={clickState.heading} />
+            <MainSec
+                property={clickState.dance}
+                info={objMain.info.dance}
+                clickFun={clickFun}
+            />
+            <MainSec
+                property={clickState.music}
+                info={objMain.info.music}
+                clickFun={clickFun}
+            />
+            <MainSec
+                property={clickState.drama}
+                info={objMain.info.drama}
+                clickFun={clickFun}
+            />
+        </EventSecn>
     );
 };
 

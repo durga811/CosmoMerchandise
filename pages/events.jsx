@@ -1,110 +1,60 @@
-import React, { useState } from "react";
-import Heading from "../components/event/Heading";
-import MainSec from "../components/event/MainSec";
-import { EventSecn, Logo } from "../components/event/styles";
-import allEvents from "../components/event/eventsInfo";
+import { useRouter } from "next/router";
+import React from "react";
+import EventPages from "../components/EventPages";
 
 
-const EventCom = () => {
-    const objMain = {
-        info: {
-            logo: "https://res.cloudinary.com/durga811/image/upload/v1671704844/cosmo%20assets/cosmo_logo_anymzn.png",
-            dance: { sec: "dance", bgColor: "#153C37" },
-            music: { sec: "music", bgColor: "#A34744" },
-            drama: { sec: "drama", bgColor: "#EDAD38" },
-        },
-        danceClick: {
-            heading: {
-                h1: "नृत्य",
-                h2: "Dance",
-                color1: "#FEE59A",
-                color2: "",
-            },
-            dance: {
-                individualEvents: allEvents.danceEvents,
-                eventSec: true,
-                marginLeft: "0",
-                bgImgUrl:
-                    "https://res.cloudinary.com/durga811/image/upload/v1671704891/cosmo%20assets/dance_bg_mwmgjp.png",
-            },
-            music: {
-                marginLeft: "90%",
-            },
-            drama: {
-                marginLeft: "95%",
-            },
-        },
-        musicClick: {
-            heading: {
-                h1: "संगीत",
-                h2: "Music",
-                color1: "#FEE59A",
-                color2: "",
-            },
-            dance: {
-                marginLeft: "0",
-            },
-            music: {
-                individualEvents: allEvents.musicEvents,
-                eventSec: true,
-                marginLeft: "5%",
-                bgImgUrl:
-                    "https://res.cloudinary.com/durga811/image/upload/v1671704891/cosmo%20assets/song_bg_lcdb6c.png",
-            },
-            drama: {
-                marginLeft: "95%",
-            },
-        },
-        dramaClick: {
-            heading: {
-                h1: "नाटक",
-                h2: "Drama",
-                color1: "#A34645",
-                color2: "#183C38",
-            },
-            dance: {
-                marginLeft: "0",
-            },
-            music: {
-                marginLeft: "5%",
-            },
-            drama: {
-                individualEvents: allEvents.dramaEvents,
-                eventSec: true,
-                marginLeft: "10%",
-                bgImgUrl:
-                    "https://res.cloudinary.com/durga811/image/upload/v1671704891/cosmo%20assets/drama_bg_oll5m0.png",
-            },
-        },
+function Event() {
+    const router = useRouter();
+
+    const image = {
+        music: "https://i.ibb.co/zxMHMyh/music.png",
+        // dance:"https://i.ibb.co/hVJyYnn/dance-Gray.png",
+        drama: "https://i.ibb.co/PMsgZXH/drama.png",
+        dance: "https://i.ibb.co/jz1z2v6/dance.png",
+        logo: "https://i.ibb.co/YRmWqPB/cosmo-logo-1.png"
     };
-
-    const [clickState, setClickState] = useState(objMain.musicClick);
-    const clickFun = (para) => {
-        if (para == "drama") setClickState(objMain.dramaClick);
-        if (para == "music") setClickState(objMain.musicClick);
-        if (para == "dance") setClickState(objMain.danceClick);
-    };
+    const transition = {
+        transition: "all 1s ease-in-out",
+    }
     return (
-        <EventSecn>
-            <Logo src={objMain.info.logo} alt="cosmo logo" />
-            <Heading property={clickState.heading} />
-            <MainSec
-                property={clickState.dance}
-                info={objMain.info.dance}
-                clickFun={clickFun}
-            />
-            <MainSec
-                property={clickState.music}
-                info={objMain.info.music}
-                clickFun={clickFun}
-            />
-            <MainSec
-                property={clickState.drama}
-                info={objMain.info.drama}
-                clickFun={clickFun}
-            />
-        </EventSecn>
-    );
-};
+        <>
+            <div className="Event relative w-screen h-screen overflow-hidden flex justify-center">
+                <div className="opacity-0 animate-[logo_4s_1_1s_linear_forwards] w-[260px] h-[57px] absolute left-[72px] top-[50px] z-[15]">
+                    <div className="logo-wrapper bg-white p-1 flex item-center text-[1.53em] font-bold tracking-widest h-[50px] gap-1 ">
+                        <div className="bg-[#153c37]">
+                            <img src={image.logo} alt="" className="w-full h-full" />
+                        </div>
+                        <h1 className="text-black">COSMOPOLITAN</h1>
+                    </div>
+                    <h3 className="tracking-[0.3rem] text-[13px] font-[600] text-white mt-[0.1rem] text-center">THE MULTI ETHNIC FEST</h3>
+                </div>
+                <div className="letter position absolute top-[430px] z-[15] text-white text-[380px] inline h-fit font-[600] leading-[341px] transition-all animate-[textAnimation_3s_1_1s_ease-in_forwards]">
+                    <h1 className="pointer-events-none">EVENTS</h1>
+                </div>
+                <div className="main absolute w-screen flex justify-center items-center h-screen flex-1">
 
-export default EventCom;
+                    <div onClick={() => router.push({
+                        pathname: "/eventDetail",
+                        query: { event: "dance" },
+                    })} className="peer absolute group cursor-pointer" style={transition}>
+                        <EventPages color='#153c37' img={image.dance} content="Dance" />
+                    </div>
+                    <div onClick={() => router.push({
+                        pathname: "/eventDetail",
+                        query: { event: "music" },
+                    })} className="left-[33.33%] hover:left-[32.33%] peer-hover:left-[35.33%] peer absolute" style={transition}>
+                        <EventPages color='#A34744' img={image.music} content="Music" />
+                    </div>
+                    <div onClick={() => router.push({
+                        pathname: "/eventDetail",
+                        query: { event: "drama" },
+                    })} className="left-[66.66%] absolute hover:left-[64.66%] peer-hover:left-[67.66%]" style={transition}>
+                        <EventPages color="#EDAD38" img={image.drama} content="Drama" />
+                    </div>
+                </div>
+            </div>
+        </>
+    );
+}
+
+export default Event;

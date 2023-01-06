@@ -3,9 +3,14 @@ import styled from "styled-components";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 import Link from "next/link";
+import Logo from "./Logo";
+import { FaBars, FaTimes } from "react-icons/fa";
+import Image from "next/image";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+
+  const [nav, setNav] = useState(false);
 
   const toggelMenu = () => {
     setShowMenu(!showMenu);
@@ -20,90 +25,67 @@ const Navbar = () => {
 
   return (
 
-    <header className="py-2">
-      <nav
-        className="
-          flex flex-wrap
-          items-center
-          justify-between
-          w-full
-          py-4
-          md:py-0
-          px-4
-          text-lg text-gray-700
-          bg-transparent
-          
-        "
-      >
-        <div>
-          <Link href="#">
-            <div className="opacity-0 animate-[logo_4s_1_1s_linear_forwards] z-[15] my-auto">
-              <div className="logo-wrapper bg-white p-1 flex item-center text-[1.53em] font-bold tracking-widest h-[50px] gap-1 ">
-                <div className="bg-[#153c37]">
-                  <img src="https://i.ibb.co/YRmWqPB/cosmo-logo-1.png" alt="" className="w-full h-full" />
-                </div>
-                <h1 className="text-black my-auto">COSMOPOLITAN</h1>
-              </div>
-              <h3 className="tracking-[0.3rem] text-[13px] font-[600] text-white mt-[0.1rem] text-center">THE MULTI ETHNIC FEST</h3>
-            </div>
-          </Link>
+    <section>
+      <div className="fixed w-full h-28 bg-[#1D2F41] flex items-center justify-items-start  sm:space-x-48">
+        <div className=" md:px-28 px-2  sm:px-14 mt-4 ">
+          <Logo />
         </div>
-        <button onClick={toggelMenu}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            id="menu-button"
-            className="h-6 w-6 cursor-pointer md:hidden block text-white"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
-        </button>
 
-        <div className={`${showMenu && "hidden"} w-full md:flex md:items-center md:w-auto`} id="menu">
-          <ul
-            className="
-              pt-4
-              text-2xl text-white
-              md:flex
-              md:justify-between 
-              space-x-10
-              md:pt-0"
-            
-          >
+        <div className="text-white hidden md:flex space-x-16 font-bold text-lg font-Montserrat ">
+          <button className="hover:scale-105 duration-150 focus:border-b-4">
+            GALLERY
+          </button>
+          <button className="hover:scale-105 duration-150 focus:border-b-4">
+            EVENTS
+          </button>
+          <button className="hover:scale-105 duration-150 focus:border-b-4">
+            TEAMS
+          </button>
+          <button className="hover:scale-105 duration-150 focus:border-b-4">
+            MERCH
+          </button>
+          <button className="hover:border-b-4 focus:border-b-4">
+            ABOUT US
+          </button>
+        </div>
+        <div
+          onClick={() => setNav(!nav)}
+          className="cursor-pointer text-[#D9D9D9] pr-4 z-10 md:hidden"
+        >
+          {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+        </div>
+        {nav && (
+          <ul className="flex flex-col text-[#D9D9D9] space-y-16 font-bold text-2xl justify-center items-center absolute w-full h-screen left-0 top-0  bg-gradient-to-b from-[#1D2F41] to-[#0F4D67]">
             <li>
-              <Link className="md:p-4 py-2 block " href="#"
-              >Gallery
-              </Link>
+              <button className="hover:scale-105 duration-150 focus:border-b-4">
+                GALLERY
+              </button>
             </li>
             <li>
-              <Link className="md:p-4 py-2 block " href="/events"
-              >Events</Link>
+              {" "}
+              <button className="hover:scale-105 duration-150 focus:border-b-4">
+                EVENTS
+              </button>
             </li>
             <li>
-              <Link className="md:p-4 py-2 block " href="/"
-              >Teams</Link>
+              <button className="hover:scale-105 duration-150 focus:border-b-4">
+                TEAMS
+              </button>
             </li>
             <li>
-              <Link className="md:p-4 py-2 block " href="/merch"
-              >Merch
-              </Link>
+              <button className="hover:scale-105 duration-150 focus:border-b-4">
+                MERCH
+              </button>
             </li>
             <li>
-              <Link className="md:p-4 py-2 block " href="#"
-              >About us
-              </Link>
+              <button className="hover:border-b-4 focus:border-b-4">
+                ABOUT US
+              </button>
             </li>
           </ul>
-        </div>
-      </nav>
-    </header>
+        )}
+      </div>
+    </section>
 
 
 

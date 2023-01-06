@@ -28,7 +28,7 @@ function UpperSection() {
           </div>
         </div>
 
-        <div className="ml-[30%]">
+        <div className="ml-[20%]">
           <img
           className="hidden md:inline-flex"
             src="https://res.cloudinary.com/dqjqy453u/image/upload/v1672938285/Rectangle_mx5b88.png"

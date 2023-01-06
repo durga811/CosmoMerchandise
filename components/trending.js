@@ -1,31 +1,114 @@
-import React from 'react';
-import './trending.css';
-import { FaArrowAltCircleLeft } from "react-icons/fa";
-import { FaArrowAltCircleRight } from "react-icons/fa";
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation, Pagination, EffectCoverflow } from "swiper";
 
-function Trending(){
-    return(
-        <div>
-           <FaArrowAltCircleLeft   className="left" />
-           <FaArrowAltCircleRight   className="right"/>
-           <section className="slider2">
-            <img className="Timage" id="Timg1" src="https://wallpaperaccess.com/full/2512452.jpg"  />
-            <img className="Timage" id="Timg2" src="https://wallpaperaccess.com/full/2512452.jpg"  />
-            <img className="Timage" id="Timg3" src="https://wallpaperaccess.com/full/2512452.jpg"  />
-            <img className="Timage" id="Timg4" src="https://wallpaperaccess.com/full/2512452.jpg"  />
-            <img className="Timage" id="Timg5" src="https://wallpaperaccess.com/full/2512452.jpg"  />
-           </section>
-           <div className='circle'>
-            <span>.</span>
-            <span>.</span>
-            <span>.</span>
-            <span>.</span>
-            <span>.</span>
-        </div>
-        </div>
-    )
+// Import Swiper styles
+import "swiper/swiper.scss";
+import "swiper/components/navigation/navigation.scss";
+import "swiper/components/pagination/pagination.scss";
+import "swiper/components/effect-coverflow/effect-coverflow.scss";
 
-};
+SwiperCore.use([Navigation, Pagination, EffectCoverflow]);
 
-
-export default Trending;
+export default function Trending() {
+  return (
+    <div className="App">
+      <Swiper
+        navigation
+        pagination={{ clickable: true }}
+        effect="coverflow"
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false
+        }}
+        slidesPerView={2}
+        centeredSlides 
+        style={{ height: "500px" }}
+      >
+        <SwiperSlide
+          style={{
+            backgroundImage:
+              "url(https://swiperjs.com/demos/images/nature-1.jpg)"
+          }}
+        >
+          
+        </SwiperSlide>
+        <SwiperSlide
+          style={{
+            backgroundImage:
+              "url(https://swiperjs.com/demos/images/nature-2.jpg)"
+          }}
+        >
+          
+        </SwiperSlide>
+        <SwiperSlide
+          style={{
+            backgroundImage:
+              "url(https://swiperjs.com/demos/images/nature-3.jpg)"
+          }}
+        >
+          
+        </SwiperSlide>
+        <SwiperSlide
+          style={{
+            backgroundImage:
+              "url(https://swiperjs.com/demos/images/nature-4.jpg)"
+          }}
+        >
+          
+        </SwiperSlide>
+        <SwiperSlide
+          style={{
+            backgroundImage:
+              "url(https://swiperjs.com/demos/images/nature-5.jpg)"
+          }}
+        >
+          
+        </SwiperSlide>
+        <SwiperSlide
+          style={{
+            backgroundImage:
+              "url(https://swiperjs.com/demos/images/nature-6.jpg)"
+          }}
+        >
+          
+        </SwiperSlide>
+        <SwiperSlide
+          style={{
+            backgroundImage:
+              "url(https://swiperjs.com/demos/images/nature-7.jpg)"
+          }}
+        >
+          
+        </SwiperSlide>
+        <SwiperSlide
+          style={{
+            backgroundImage:
+              "url(https://swiperjs.com/demos/images/nature-8.jpg)"
+          }}
+        >
+          
+        </SwiperSlide>
+        <SwiperSlide
+          style={{
+            backgroundImage:
+              "url(https://swiperjs.com/demos/images/nature-9.jpg)"
+          }}
+        >
+          
+        </SwiperSlide>
+        <SwiperSlide
+          style={{
+            backgroundImage:
+              "url(https://swiperjs.com/demos/images/nature-10.jpg)"
+          }}
+        >
+          
+        </SwiperSlide>
+      </Swiper>
+    </div>
+  );
+}

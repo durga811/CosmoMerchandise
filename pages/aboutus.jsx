@@ -30,9 +30,10 @@ export default function Aboutus() {
 
     return (
         <div className="w-full min-h-screen bg-[#0F4D67] ">
+            
             <section className="bg-[url(https://res.cloudinary.com/dkqxnquga/image/upload/v1671727589/Vector_bfux1b.png)] ">
                 {/* header */}
-                <section>
+                {/* <section>
                     <div className="fixed w-full h-28 bg-[#1D2F41] flex items-center justify-items-start  sm:space-x-48">
                         <div className=" md:px-28 px-2  sm:px-14 mt-4 ">
                             <div className="w-full flex flex-col">
@@ -109,7 +110,7 @@ export default function Aboutus() {
                             </ul>
                         )}
                     </div>
-                </section>
+                </section> */}
                 {/* hero */}
                 <section className="max-w-7xl mx-auto ">
                     <div className="grid grid-cols-1 md:grid-cols-3 px-10 items-center md:py-64 py-48 ">

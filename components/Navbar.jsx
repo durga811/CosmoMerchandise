@@ -15,38 +15,38 @@ const Navbar = () => {
   const toggelMenu = () => {
     setShowMenu(!showMenu);
   };
-  // const button = document.querySelector('#menu-button');
+  // const a = document.querySelector('#menu-a');
   // const menu = document.querySelector('#menu');
 
 
-  // button.addEventListener('click', () => {
+  // a.addEventListener('click', () => {
   //   menu.classList.toggle('hidden');
   // });
 
   return (
 
-    <section>
-      <div className="fixed w-full h-28 bg-[#1D2F41] flex items-center justify-items-start  sm:space-x-48">
-        <div className=" md:px-28 px-2  sm:px-14 mt-4 ">
+    <section className="">
+      <div className="fixed w-full h-28 bg-transparent bg-black bg-opacity-40 flex items-center justify-between  sm:space-x-48 px-2 md:px-8 lg:px-16">
+        <div className="mt-4 ">
           <Logo />
         </div>
 
-        <div className="text-white hidden md:flex space-x-16 font-bold text-lg font-Montserrat ">
-          <button className="hover:scale-105 duration-150 focus:border-b-4">
+        <div className="text-white hidden md:flex space-x-16 font-bold text-lg mx-auto md:items-center md:justify-start">
+          <a className="hover:scale-105 duration-150 focus:border-b-4">
             GALLERY
-          </button>
-          <button className="hover:scale-105 duration-150 focus:border-b-4">
+          </a>
+          <a className="hover:scale-105 duration-150 focus:border-b-4">
             EVENTS
-          </button>
-          <button className="hover:scale-105 duration-150 focus:border-b-4">
+          </a>
+          <a className="hover:scale-105 duration-150 focus:border-b-4">
             TEAMS
-          </button>
-          <button className="hover:scale-105 duration-150 focus:border-b-4">
+          </a>
+          <a className="hover:scale-105 duration-150 focus:border-b-4">
             MERCH
-          </button>
-          <button className="hover:border-b-4 focus:border-b-4">
+          </a>
+          <a className="hover:border-b-4 focus:border-b-4">
             ABOUT US
-          </button>
+          </a>
         </div>
         <div
           onClick={() => setNav(!nav)}
@@ -55,32 +55,32 @@ const Navbar = () => {
           {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
         </div>
         {nav && (
-          <ul className="flex flex-col text-[#D9D9D9] space-y-16 font-bold text-2xl justify-center items-center absolute w-full h-screen left-0 top-0  bg-gradient-to-b from-[#1D2F41] to-[#0F4D67]">
+          <ul className="flex flex-col text-[#D9D9D9] space-y-16 font-bold text-2xl justify-center items-center absolute w-full h-screen left-0 top-0 bg-[#391F26]">
             <li>
-              <button className="hover:scale-105 duration-150 focus:border-b-4">
+              <a className="hover:scale-105 duration-150 focus:border-b-4">
                 GALLERY
-              </button>
+              </a>
             </li>
             <li>
               {" "}
-              <button className="hover:scale-105 duration-150 focus:border-b-4">
+              <a className="hover:scale-105 duration-150 focus:border-b-4">
                 EVENTS
-              </button>
+              </a>
             </li>
             <li>
-              <button className="hover:scale-105 duration-150 focus:border-b-4">
+              <a className="hover:scale-105 duration-150 focus:border-b-4">
                 TEAMS
-              </button>
+              </a>
             </li>
             <li>
-              <button className="hover:scale-105 duration-150 focus:border-b-4">
+              <a className="hover:scale-105 duration-150 focus:border-b-4">
                 MERCH
-              </button>
+              </a>
             </li>
             <li>
-              <button className="hover:border-b-4 focus:border-b-4">
+              <a className="hover:border-b-4 focus:border-b-4">
                 ABOUT US
-              </button>
+              </a>
             </li>
           </ul>
         )}

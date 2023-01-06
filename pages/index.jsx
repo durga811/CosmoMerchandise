@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <div
         // className="bg-[#391F26]  w-full bg-cover"
-        className='bg-[url("/Homepage.png")]  bg-center bg-cover overflow-hidden scrollbar-hide  w-full'
+        className='bg-[url("/Homepage.png")]  bg-center bg-cover overflow-hidden scrollbar-hide  w-full pt-24'
 
         alt="picture"
       >

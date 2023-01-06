@@ -18,7 +18,8 @@ export default function Home() {
     <>
       <div
         // className="bg-[#391F26]  w-full bg-cover"
-        className='bg-[url("https://res.cloudinary.com/dqjqy453u/image/upload/v1672938212/Mask_group_gs88zh.png")]  bg-center bg-cover overflow-hidden bg-[#391F26]/80 scrollbar-hide  w-full bg-cover'
+        className='bg-[url("/Homepage.png")]  bg-center bg-cover overflow-hidden scrollbar-hide  w-full bg-cover'
+        // className='bg-[url("https://res.cloudinary.com/dqjqy453u/image/upload/v1672938212/Mask_group_gs88zh.png")]  bg-center bg-cover overflow-hidden bg-[#391F26]/80 scrollbar-hide  w-full bg-cover'
 
         alt="picture"
       >

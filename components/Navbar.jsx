@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
 
     <section className="">
-      <div className="fixed w-full h-24 bg-transparent bg-black bg-opacity-40 flex items-center justify-between  sm:space-x-48 px-2 md:px-8 lg:px-16">
+      <div className="fixed w-full h-24 bg-transparent bg-black bg-opacity-40 flex items-center justify-between  sm:space-x-48 px-2 md:px-8 lg:px-16 z-[999]">
         <div className="mt-4 ">
           <Logo />
         </div>

@@ -6,10 +6,10 @@ import Button from "../components/Button";
 // Components
 import UpperSection from "../components/UpperSection";
 import Carousel from "../components/Carousel";
-import Trending from "../components/homepage/Trending";
 import Highlights from "../components/homepage/Highlights";
 import Events from "../components/Event";
 import Footer from "../components/Footer";
+import TrendingComp from "../components/TrendingComp";
 
 export default function Home() {
   return (
@@ -17,13 +17,13 @@ export default function Home() {
       <div
 
         // className="bg-[#391F26]  w-full bg-cover"
-        className='bg-[url("/Homepage.png")]  bg-center bg-cover overflow-hidden scrollbar-hide  w-full pt-24'
+        className='bg-[url("https://i.ibb.co/rcNjJjT/Homepage.png")]  bg-center bg-cover overflow-hidden scrollbar-hide  w-full pt-24'
 
         alt="picture"
       >
         <div className="scrollbar-hide">
           <UpperSection />
-          <div className=" md:flex justify-center items-center text-black">
+          <div className="flex space-x-20 justify-center items-center text-black">
             <Button text={"DRAMA"} />
             <Button text={"DANCE"} />
             <Button text={"MUSIC"} />
@@ -41,8 +41,9 @@ export default function Home() {
             TRENDING VIDEOS
           </div>
           <div className=" flex justify-center items-center">
-            <Trending />
+            <TrendingComp />
           </div>
+          <Events />
         </div>
       </div>
     </>

@@ -4,6 +4,7 @@ import MainSec from "../components/event/MainSec";
 import { EventSecn, Logo } from "../components/event/styles";
 import allEvents from "../components/event/eventsInfo";
 import { useRouter } from "next/router";
+import Link from "next/link";
 const EventCom = () => {
 
     const router = useRouter();
@@ -99,7 +100,9 @@ const EventCom = () => {
     };
     return (
         <EventSecn>
-            <Logo src={objMain.info.logo} alt="cosmo logo" />
+            <Link href="/" >
+                <Logo src={objMain.info.logo} alt="cosmo logo" />
+            </Link>
             <Heading property={clickState.heading} />
             <MainSec
                 property={clickState.dance}

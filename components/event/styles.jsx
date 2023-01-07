@@ -14,6 +14,7 @@ export const Logo = styled.img`
   left: 4rem;
   top: 2rem;
   display: inline-block;
+  cursor: pointer;
 `
 export const EveHeadingSec = styled.div`
   position: absolute;

@@ -26,27 +26,27 @@ const Navbar = () => {
   return (
 
     <section className="">
-      <div className="fixed w-full h-28 bg-transparent bg-black bg-opacity-40 flex items-center justify-between  sm:space-x-48 px-2 md:px-8 lg:px-16">
+      <div className="fixed w-full h-24 bg-transparent bg-black bg-opacity-40 flex items-center justify-between  sm:space-x-48 px-2 md:px-8 lg:px-16">
         <div className="mt-4 ">
           <Logo />
         </div>
 
         <div className="text-white hidden md:flex space-x-16 font-bold text-lg mx-auto md:items-center md:justify-start">
-          <a className="hover:scale-105 duration-150 focus:border-b-4">
+          <Link href="/gallery" className="hover:scale-105 duration-150 cursor-pointer focus:border-b-4">
             GALLERY
-          </a>
-          <a className="hover:scale-105 duration-150 focus:border-b-4">
+          </Link>
+          <Link href="/events" className="hover:scale-105 duration-150 cursor-pointer focus:border-b-4">
             EVENTS
-          </a>
-          <a className="hover:scale-105 duration-150 focus:border-b-4">
+          </Link>
+          <Link href="/ourteam" className="hover:scale-105 duration-150 cursor-pointer focus:border-b-4">
             TEAMS
-          </a>
-          <a className="hover:scale-105 duration-150 focus:border-b-4">
+          </Link>
+          <Link href="/merch" className="hover:scale-105 duration-150 cursor-pointer focus:border-b-4">
             MERCH
-          </a>
-          <a className="hover:border-b-4 focus:border-b-4">
+          </Link>
+          <Link href="/aboutus" className="hover:scale-105 duration-150  cursor-pointer focus:border-b-4">
             ABOUT US
-          </a>
+          </Link>
         </div>
         <div
           onClick={() => setNav(!nav)}
@@ -57,30 +57,30 @@ const Navbar = () => {
         {nav && (
           <ul className="flex flex-col text-[#D9D9D9] space-y-16 font-bold text-2xl justify-center items-center absolute w-full h-screen left-0 top-0 bg-[#391F26]">
             <li>
-              <a className="hover:scale-105 duration-150 focus:border-b-4">
+              <Link href="/gallery" className="hover:scale-105 duration-150 focus:border-b-4">
                 GALLERY
-              </a>
+              </Link>
             </li>
             <li>
               {" "}
-              <a className="hover:scale-105 duration-150 focus:border-b-4">
+              <Link href="/events" className="hover:scale-105 duration-150 focus:border-b-4">
                 EVENTS
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="hover:scale-105 duration-150 focus:border-b-4">
+              <Link href="/ourteam" className="hover:scale-105 duration-150 focus:border-b-4">
                 TEAMS
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="hover:scale-105 duration-150 focus:border-b-4">
+              <Link href="/merch" className="hover:scale-105 duration-150 focus:border-b-4">
                 MERCH
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="hover:border-b-4 focus:border-b-4">
+              <Link href="/aboutus" className="hover:border-b-4 focus:border-b-4">
                 ABOUT US
-              </a>
+              </Link>
             </li>
           </ul>
         )}

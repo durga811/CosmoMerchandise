@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import React from "react";
 import EventPages from "../components/EventPages";
+import Logo from "../components/Logo";
 
 
 function Event() {
@@ -19,7 +20,7 @@ function Event() {
     return (
         <>
             <div className="Event relative w-screen h-screen overflow-hidden flex justify-center">
-                <div className="opacity-0 animate-[logo_4s_1_1s_linear_forwards] w-[260px] h-[57px] absolute left-[72px] top-[50px] z-[15]">
+                <div onClick={() => router.push("/")} className="cursor-pointer opacity-0 animate-[logo_4s_1_1s_linear_forwards] w-[260px] h-[57px] absolute left-[72px] top-[50px] z-[15]">
                     <div className="logo-wrapper bg-white p-1 flex item-center text-[1.53em] font-bold tracking-widest h-[50px] gap-1 ">
                         <div className="bg-[#153c37]">
                             <img src={image.logo} alt="" className="w-full h-full" />
